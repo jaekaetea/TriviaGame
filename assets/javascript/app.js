@@ -188,7 +188,7 @@ function update() {
                     wait();
                 }
                 else if (one != two) {
-                    sound.src = "assets/music/wrong.aac";
+                    sound.src = "assets/music/wrong.mp3";
                     play();
                     $("#question").html("<p>" + "Nope!" + "</p>");
                     $("#answers").html("<p>" + "The Correct Answer is: " + two + "</p>");
@@ -214,10 +214,10 @@ function count() {
     else if (num === 0) {
         num = 0;
         stop();
-        sound.src = "assets/music/timeout.aac";
+        sound.src = "assets/music/timeout.mp3";
         play();
         $("#question").html("<p>" + "Out of Time!" + "</p>");
-        $("#answers").html("<p>" + "The Correct Answer is " + String(Object.values(trivia.answer[i])) + "</p>");
+        $("#answers").html("<p>" + "The Correct Answer is: " + String(Object.values(trivia.answer[i])) + "</p>");
         $("#pic").show();
         unanswered++;
         i++;
