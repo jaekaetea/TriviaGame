@@ -256,7 +256,7 @@ function displayResults() {
     $("#answers").append("<span>" + "Incorrect Answers: " + incorrect + "</span>" + "<br>");
     $("#answers").append("<span>" + "Unanswered: " + unanswered + "</span>" + "<br>");
     var prompt = "Start Over?";
-    $("#answers").append($("<button class='btn btn-dark btn-lg' id='butt'>"+prompt+"</button>"+"<br>"+"<br>"));
+    $("#answers").append($("<button class='btn btn-light btn-lg' id='butt'>"+prompt+"</button>"+"<br>"+"<br>"));
     $("#answers").append("<br>" + "<br>" + "<br>");
     $("#answers").append("Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!" + "<br>");
     $("#answers").append("Many thanks to https://www.techspot.com/trivia/ for the trivia questions! . . .But you're wrong about GIF!");
