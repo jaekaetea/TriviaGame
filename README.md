@@ -2,7 +2,7 @@
 
 
 
-Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!"
+Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!
 
 Many thanks to https://www.techspot.com/trivia/ for the trivia questions! . . .But you're wrong about GIF!
 

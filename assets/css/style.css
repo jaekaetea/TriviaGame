@@ -50,3 +50,8 @@ span {
 .btn-light {
     margin: 10px;
 }
+
+#pic {
+    height: 300px;
+    width: 350px;
+}

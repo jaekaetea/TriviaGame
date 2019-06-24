@@ -75,9 +75,9 @@ var trivia = {
     ],
     answer: [
         {
-            q1: "Bliss"
+            q1: "Bliss",
         }, {
-            q2: "Grand Theft Auto IV"
+            q2: "Grand Theft Auto IV",
         }, {
             q3: "A T-rex hurdling cacti"
         }, {
@@ -121,8 +121,15 @@ var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
 var intervalId = setInterval(count, 1000);
+var sound = new Audio();
 
-$(document).ready(function(){	
+function play() {
+    sound.currentTime = 0;  
+    sound.play();
+}
+
+$(document).ready(function(){
+    $("#pic").hide();	
 	$("#startBtn").click(function() {
         setUp();
         update();
@@ -147,8 +154,13 @@ function setUp() {
 
 function update() {
     if (i < 17) {
+        $("#pic").hide();
+        pic = document.getElementById("pic");
+        getPic();
         $("#pregame").html("");
         $("#time").html("Time Remaining: 30 Seconds");
+        sound.src = "assets/music/jeopardy.aac";
+        play();
         run();
         $("#question").html("<p>" + Object.values(trivia.q[i]) + "</p>");
         $("#answers").html("");
@@ -165,18 +177,22 @@ function update() {
                 two = String(three);
                 console.log(one+two);
                 if (one === two) {
+                    sound.src = "assets/music/winner.aac";
+                    play();
                     $("#question").html("<p>" + "Correct!" + "</p>");
-                    // Add a picture to get rid of it$("#answers").html()
                     $("#answers").html("");
+                    $("#pic").show();
                     correct++;
                     i++;
 
                     wait();
                 }
                 else if (one != two) {
+                    sound.src = "assets/music/wrong.aac";
+                    play();
                     $("#question").html("<p>" + "Nope!" + "</p>");
-                    // Add a picture to get rid of it$("#answers").html()
                     $("#answers").html("<p>" + "The Correct Answer is: " + two + "</p>");
+                    $("#pic").show();
                     incorrect++;
                     i++;
 
@@ -198,8 +214,11 @@ function count() {
     else if (num === 0) {
         num = 0;
         stop();
+        sound.src = "assets/music/timeout.aac";
+        play();
         $("#question").html("<p>" + "Out of Time!" + "</p>");
         $("#answers").html("<p>" + "The Correct Answer is " + String(Object.values(trivia.answer[i])) + "</p>");
+        $("#pic").show();
         unanswered++;
         i++;
 
@@ -250,3 +269,40 @@ function displayResults() {
     });
 };
 
+function getPic() {
+    if (i === 0) {
+        pic.src = "assets/images/q1.jpg";
+    } else if (i === 1) {
+        pic.src = "https://media2.giphy.com/media/kFgzrTt798d2w/200.webp?cid=790b76115d10590f6436376d32642aa0&rid=200.webp";
+    } else if (i === 2) {
+        pic.src = "assets/images/q3.jpg";
+    } else if (i === 3) {
+        pic.src = "assets/images/q4.jpg";
+    } else if (i === 4) {
+        pic.src = "https://media1.giphy.com/media/l2YOoFmqbInReTKkE/200.webp?cid=790b76115d105a444b3761516b1589d9&rid=200.webp";
+    } else if (i === 5) {
+        pic.src = "assets/images/q6.jpg";
+    } else if (i === 6) {
+        pic.src = "assets/images/q7.jpg";
+    } else if (i === 7) {
+        pic.src = "assets/images/q8.jpg";
+    } else if (i === 8) {
+        pic.src = "assets/images/q9.jpg";
+    } else if (i === 9) {
+        pic.src = "assets/images/q10.jpg";
+    } else if (i === 10) {
+        pic.src = "assets/images/q11.jpg";
+    } else if (i === 11) {
+        pic.src = "assets/images/q12.jpg";
+    } else if (i === 12) {
+        pic.src = "https://media.giphy.com/media/26BROFLJSFhP0cMGk/giphy.gif";
+    } else if (i === 13) {
+        pic.src = "assets/images/q14.jpg";
+    } else if (i === 14) {
+        pic.src = "assets/images/q15.jpg";
+    } else if (i === 15) {
+        pic.src = "assets/images/q16.jpg";
+    } else if (i === 16) {
+        pic.src = "https://media0.giphy.com/media/jWdyMNSY7auVq/200w.webp?cid=790b76115d1059694653394f456285e2&rid=200w.webp";
+    }
+};
