@@ -1,5 +1,11 @@
 # JavaScript Assignment 2
 
+
+
+Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!"
+
+Many thanks to https://www.techspot.com/trivia/ for the trivia questions! . . .But you're wrong about GIF!
+
 ### Overview
 
 In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
