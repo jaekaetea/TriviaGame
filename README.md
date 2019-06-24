@@ -1,5 +1,7 @@
 # JavaScript Assignment 2
 
+Play the game here! --> https://jaekaetea.github.io/TriviaGame/
+
 
 
 Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!
