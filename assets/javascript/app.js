@@ -54,7 +54,7 @@ var trivia = {
         }, {
             q: ["Samba", "Mosaic", "Cello", "ViolaWWW"]
         }, {
-            q: ["Don't be evil", "I'm feeling lucky", "Do the right thing", "Is this thing on?"]
+            q: ["Don't be evil", "I&#39m feeling lucky", "Do the right thing", "Is this thing on?"]
         }, {
             q: ["Neo Geo Pocket Color", "Gameboy Color", "Sega Game Gear", "Atari Lynx"]
         }, {
