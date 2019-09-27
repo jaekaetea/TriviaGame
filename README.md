@@ -16,7 +16,7 @@ Just like Jeopardy, the users are only given so much time to answer each questio
 
 ![countdown](/Images/countdownShown.gif)
 
-At the end of the questions, the users and then shown the results.
+At the end of the questions, the user is shown the results and are given a chance to try again.
 
 ![results](/Images/resultsShown.png)
 
@@ -29,6 +29,8 @@ HTML, CSS, Bootstrap, JavaScript, Timers, and jQuery.
 
 
 ---
+
+## Class Instructions
 
 ### Overview
 
