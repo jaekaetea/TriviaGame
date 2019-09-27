@@ -3,10 +3,32 @@
 Play the game here! --> https://jaekaetea.github.io/TriviaGame/
 
 
-
 Many thanks to https://www.pixijs.com/ for the beautiful and AMAZING background!
-
 Many thanks to https://www.techspot.com/trivia/ for the trivia questions! . . .But you're wrong about GIF!
+
+---
+
+In this app, users play a Jeopardy-Trivia like game where they answer Technology Trivia questions.
+
+![beginning](/Images/beginShown.png)
+
+Just like Jeopardy, the users are only given so much time to answer each questions.
+
+![countdown](/Images/countdownShown.gif)
+
+At the end of the questions, the users and then shown the results.
+
+![results](/Images/resultsShown.png)
+
+
+### Techologies Used
+HTML, CSS, Bootstrap, JavaScript, Timers, and jQuery. 
+
+
+### Enjoy!
+
+
+---
 
 ### Overview
 
